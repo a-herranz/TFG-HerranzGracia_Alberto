@@ -1,15 +1,3 @@
-/*
-  ModbusRTU ESP8266/ESP32
-  Simple slave example
-
-  (c)2019 Alexander Emelianov (a.m.emelianov@gmail.com)
-  https://github.com/emelianov/modbus-esp8266
-
-  modified 13 May 2020
-  by brainelectronics
-
-  This code is licensed under the BSD New License. See LICENSE.txt for more info.
-*/
 #include <Arduino.h>
 #include <IRremoteESP8266.h>
 #include <IRrecv.h>
@@ -23,10 +11,7 @@ ModbusRTU mb;
 
 #if defined(ESP8266)
  #include <SoftwareSerial.h>
- // SoftwareSerial S(D1, D2, false, 256);
-
- // receivePin, transmitPin, inverse_logic, bufSize, isrBufSize
- // connect RX to D2 (GPIO4, Arduino pin 4), TX to D1 (GPIO5, Arduino pin 4)
+ // connect RX to D2 (GPIO4, Arduino pin 4), TX to D1 (GPIO5, Arduino pin 5)
  SoftwareSerial S(4, 5);
 #endif
 
